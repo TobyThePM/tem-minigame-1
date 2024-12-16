@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<style>
+    @import url('httpsL//fonts.googleapis.com/css2?family=Poppins&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        text-align: center;
+        background-color: ghostwhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+    }
+
+    .back{
+    position: absolute;
+    top: 90%;
+    left: 7.1%;
+    transform:translate(-50%,-50%)
+    }
+
+    .next{
+    position: absolute;
+    top: 90%;
+    left: 90.1%;
+    transform:translate(-50%,-50%)
+    }
+
+    .box{
+    border: 3px solid #000000;
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.5 ease;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.box:hover{
+    background-color:black;
+    color: white;
+}
+</style>
+<body>
+    <h1>Game</h1>
+    <canvas></canvas>
+    <p>Control the left player by using up and down arrow keys</p>
+    <div class="back">
+        <a href="https://tobythepm.github.io/tem-game-selection/" class="box"> ← Back </a>
+    </div>
+    <script src="./scriptpong.js"></script>
+</body>
+</html>
